@@ -9,8 +9,6 @@ RUN wget --quiet https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86
 RUN bash Miniconda3-latest-Linux-x86_64.sh -b -p /miniconda
 ENV PATH /miniconda/bin:$PATH
 
-RUN conda install -c rdkit rdkit
-RUN conda install numpy scipy scikit-learn
 RUN conda install -c conda-forge flask
 RUN conda install -c anaconda protobuf
 
